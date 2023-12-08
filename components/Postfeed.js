@@ -41,11 +41,7 @@ export default function PostFeed() {
           />
         </div>
         <div className="xl:hidden md:hidden sm:hidden">
-          <img src={"/assets/x-logo.png"}
-            width={34}
-            height={34}
-            alt="logo" />
-          
+          <img src={"/assets/x-logo.png"} className="w-8 h-8" alt="logo" />
         </div>
         <div className="flex items-center justify-center xl:hidden md:hidden sm:hidden cursor-pointer">
           <CogIcon className="h-9 w-9 text-gray-500" />

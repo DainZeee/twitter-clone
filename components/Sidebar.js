@@ -32,11 +32,7 @@ export default function Sidebar() {
     <div className="h-full hidden sm:flex flex-col fixed xl:ml-24 sm:ml-2 ">
       <nav className="h-full relative xl:space-y-1.5">
         <div className="flex justify-center items-center py-3 xl:justify-start xl:p-3">
-          <Image
-            src={"/assets/x_logo_2023_(white).png"}
-            width={34}
-            height={34}
-          />
+          <img src={"/assets/x-logo.png"} className="w-8 h-8" alt="logo" />
         </div>
         <SidebarLink Icon={HomeIcon} text={"Home"} />
         <SidebarLink Icon={HashtagIcon} text={"Explore"} />
