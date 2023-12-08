@@ -4,7 +4,6 @@ import TweetInput from "./TweetInput";
 import { collection, onSnapshot, orderBy, query } from "firebase/firestore";
 import { auth, db } from "@/firebase";
 import { useDispatch, useSelector } from "react-redux";
-import Image from "next/image";
 import { CogIcon } from "@heroicons/react/outline";
 import { signOut } from "firebase/auth";
 import { signOutUser } from "@/redux/userSlice";
@@ -42,12 +41,11 @@ export default function PostFeed() {
           />
         </div>
         <div className="xl:hidden md:hidden sm:hidden">
-          <Image
-            src={"/assets/x_logo_2023_(white).png"}
+          <img src={"/assets/x-logo.png"}
             width={34}
             height={34}
-            alt="logo"
-          />
+            alt="logo" />
+          
         </div>
         <div className="flex items-center justify-center xl:hidden md:hidden sm:hidden cursor-pointer">
           <CogIcon className="h-9 w-9 text-gray-500" />
